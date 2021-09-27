@@ -1,0 +1,49 @@
+// General Settings
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  background: $offWhite;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $black;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  color: $grey;
+}
+@include media-xl {
+  body {
+    text-align: -webkit-center;
+  }
+  #root{
+    max-width: 1800px;
+  }
+}
