@@ -6,8 +6,7 @@
   z-index: 99;
 }
 .nav-active {
-  background-color: $bgPrimary;
-  background-image: linear-gradient(90deg, $bgPrimary 0%, $bgSecondary 100%);
+  background-color: var(--background);
 }
 .nav-center {
   .nav-header {
@@ -20,15 +19,18 @@
       width: 50px;
     }
   }
-
   .nav-toggle {
     font-size: 1.5rem;
     background: transparent;
     border-color: transparent;
     transition: $transition;
     cursor: pointer;
-  }
 
+    &:hover{
+      transform: rotate(90deg);
+      color: var(--headline) !important;
+    }
+  }
   .links-container {
     overflow: hidden;
     transition: $transition;
@@ -36,25 +38,20 @@
     position: absolute;
     z-index: 999;
     text-align: center;
-    background: $bgPrimaryLight;
+    background: var(--tertiary);
   }
-
   .links {
     display: inline-flex;
     align-items: center;
 
-    a {
-      color: $grey;
-      text-transform: uppercase;
-      letter-spacing: $spacing;
-      font-weight: 600;
-    }
-
     .nav-link {
       cursor: pointer;
 
-      &.active, &:hover {
-        color: $black !important;
+      a {
+        color: var(--headline);
+        text-transform: uppercase;
+        letter-spacing: $spacing;
+        font-weight: 600;
       }
     }
   }
@@ -68,16 +65,21 @@
     row-gap: 0.5rem;
     flex-direction: column;
     padding: 3rem;
+
+    .nav-link a{
+      &.active, &:hover {
+        color: var(--background) !important;
+      }
+    }
   }
 }
 @include media-lg {
   .nav-center {
     padding: 0 2rem;
-    margin: 0 auto;
+    margin: 0.5rem auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     .nav-toggle {
       display: none;
     }
@@ -89,6 +91,12 @@
       column-gap: 1.5rem;
       flex-direction: row;
       padding: 0;
+
+      .nav-link a{
+        &.active, &:hover {
+          color: var(--button) !important;
+        }
+      }
     }
   }
 }

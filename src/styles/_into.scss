@@ -1,6 +1,6 @@
 .intro {
   height: 85vh;
-  background-color: white;
+  background-color: var(--background);
   display: flex;
 
   @include media-sm{
@@ -26,17 +26,25 @@
         font-size: 64px;
         font-weight: 700;
         line-height: 56px;
-        color: $grey;
+        color: var(--headline);
 
         @include media-sm{
           font-size: 40px;
         }
       }
-      .last-name{
-        color: #0563bb;
+      
+      .last-name {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--button);
+        transition: $transition;
+
+        &:hover {
+          color: var(--button);
+          -webkit-text-stroke-width: 0px;
+        }
       }
       p{
-        color: #45505b;
         margin: 15px 0 0 0;
         font-size: 26px;
         font-family: "Poppins", sans-serif;
@@ -59,23 +67,10 @@
           font-size: 1.5rem;
         }
       }
-      button {
-        margin-top: 20px;
-        background: #0563bb;
-        border: 0;
-        padding: 10px 35px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-      }
-
-      button:hover {
-        background: #0678e3;
-      }
     }
     .down-arrow {
       position: absolute;
-      bottom: 10px;
+      bottom: -20px;
       left: 50%;
 
       img {
@@ -89,5 +84,10 @@
         }
       }
     }
+  }
+}
+.icons {
+  svg{
+  stroke: var(--button);
   }
 }

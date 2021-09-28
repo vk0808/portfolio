@@ -1,0 +1,31 @@
+.theme-options{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 20px 0;
+
+  div {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 2px 10px;
+    border: 2px solid black;
+    display: inline-block;
+    opacity: 0.65;
+
+    &.active {
+      opacity: 1;
+      border: 2px solid #f25042;
+    }
+  }
+}
+#theme-1{
+  background: #fffffe;
+}
+#theme-2{
+  background: #fef6e4;
+}
+#theme-4{
+  background: #16161a;
+}

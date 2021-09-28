@@ -4,7 +4,7 @@ export const social = [
   {
     id: 1,
     name: "Github",
-    url: "https://www.twitter.com",
+    url: "https://www.github.com/vk0808",
     icon: <FiGithub />
   },
   {

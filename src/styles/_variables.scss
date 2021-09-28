@@ -1,4 +1,14 @@
 // Variables
+:root {
+  --background: #fffffe;
+  --secondary: #d1d1e9;
+  --tertiary: #e45858;
+  --headline: #2b2c34;
+  --paragraph: #2b2c34;
+  --button: #6246ea;
+  --button-text: #fffffe;
+}
+
 $primaryColor: hsl(262, 94%, 51%);
 $secondaryColor: hsl(168, 83%, 44%);
 $bgPrimary: hsl(169, 75%, 87%);
