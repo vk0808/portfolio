@@ -16,7 +16,16 @@
     align-items: center;
 
     .logo {
-      width: 50px;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 1.25rem;
+      text-decoration: underline;
+      letter-spacing: $spacing;
+    }
+
+    @include media-lg{
+      .logo{
+        font-size: 2rem;
+      }
     }
   }
   .nav-toggle {
@@ -58,17 +67,26 @@
 }
 
 @include media-sm {
-  .links-container {
-    height: 0;
-  }
-  .links {
-    row-gap: 0.5rem;
-    flex-direction: column;
-    padding: 3rem;
+  .nav-center {
+    margin-top: 1rem;
 
-    .nav-link a{
-      &.active, &:hover {
-        color: var(--background) !important;
+    .nav-toggle{
+      margin-top: 0.5rem;
+      padding: 0;
+    }
+
+    .links-container {
+      height: 0;
+    }
+    .links {
+      row-gap: 0.5rem;
+      flex-direction: column;
+      padding: 3rem;
+
+      .nav-link a{
+        &.active, &:hover {
+          color: var(--background) !important;
+        }
       }
     }
   }
@@ -91,6 +109,7 @@
       column-gap: 1.5rem;
       flex-direction: row;
       padding: 0;
+      margin-top: 0.5rem;
 
       .nav-link a{
         &.active, &:hover {

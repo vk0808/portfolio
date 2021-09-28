@@ -1,12 +1,15 @@
 .intro {
-  height: 85vh;
+  height: 80vh;
   background-color: var(--background);
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @include media-sm{
-    flex-direction: column;
-    align-items: center;
+  &:hover .last-name {
+    color: var(--button) !important;
+    -webkit-text-stroke-width: 0px !important;
   }
+
   .left {
     .wrapper {
       width: 100%;
@@ -15,10 +18,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
       @include media-sm{
         padding: 2rem 0.5rem;
-        align-items: center;
       }
 
       h1 {
@@ -28,7 +31,7 @@
         line-height: 56px;
         color: var(--headline);
 
-        @include media-sm{
+        @include media-sm {
           font-size: 40px;
         }
       }
@@ -38,16 +41,16 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--button);
         transition: $transition;
-
-        &:hover {
-          color: var(--button);
-          -webkit-text-stroke-width: 0px;
-        }
       }
       p{
+        text-align: center;
         margin: 15px 0 0 0;
         font-size: 26px;
         font-family: "Poppins", sans-serif;
+      }
+      .location {
+        margin-top: 0;
+        margin-bottom: 1rem;
       }
       h2 {
         font-size: 35px;
@@ -63,31 +66,45 @@
         display: flex;
         gap: 1rem;
 
-        .icons{
+        .icons {
           font-size: 1.5rem;
+
+          svg {
+            fill: var(--headline);
+
+            &:hover{
+              fill: var(--button);
+            }
+          }
         }
       }
     }
-    .down-arrow {
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
+    .arrow {
+      display: flex;
+      justify-content: center;
 
-      img {
-        width: 30px;
-        animation: arrowBlink 2s infinite;
-      }
+      .down-arrow {
+        position: absolute;
+        bottom: 0px;
+        
+        svg {
+          width: 30px;
+          animation: arrowBlink 2s infinite;
 
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
+          #inner-circle {
+            fill: var(--tertiary) !important;
+          }
+          #outer-circle{
+            fill: var(--headline) !important;
+          }
+        }
+        
+        @keyframes arrowBlink {
+          100% {
+            opacity: 1;
+          }
         }
       }
     }
-  }
-}
-.icons {
-  svg{
-  stroke: var(--button);
   }
 }

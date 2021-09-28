@@ -22,11 +22,7 @@ const Navbar = () => {
       <nav>
         <div className="nav-center">
           <div className="nav-header">
-            <img
-              src="./assets/img/letter_logo.png"
-              alt="Logo"
-              className="logo"
-            />
+            <h2 className="logo">vinodKumar.</h2>
             <button
               className="nav-toggle"
               onClick={() => setShowLinks(!showLinks)}

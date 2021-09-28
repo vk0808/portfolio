@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Theme from "../ThemeSwitcher/Theme";
 import { social } from "./social-links";
+import { ReactComponent as Down } from "./down-arrow.svg";
 
 const Intro = () => {
+  const [colorTheme, setColorTheme] = useState("theme-1");
   return (
     <div className="intro" id="intro">
+      <div className="theme-switcher">
+        <Theme colorTheme={colorTheme} setColorTheme={setColorTheme} />
+      </div>
       <div className="left">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
@@ -37,11 +44,10 @@ const Intro = () => {
         </div>
         <div className="arrow">
           <a className="down-arrow" href="#portfolio">
-            <img src="assets/img/down.png" alt="" />
+            <Down />
           </a>
         </div>
       </div>
-      <div className="right"></div>
     </div>
   );
 };

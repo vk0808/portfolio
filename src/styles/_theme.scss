@@ -12,10 +12,8 @@
     margin: 2px 10px;
     border: 2px solid black;
     display: inline-block;
-    opacity: 0.65;
 
     &.active {
-      opacity: 1;
       border: 2px solid #f25042;
     }
   }
