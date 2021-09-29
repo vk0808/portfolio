@@ -1,0 +1,59 @@
+.about {
+  height: 80vh;
+  margin-bottom: 2rem;
+
+  .container{
+    position: relative;
+    margin-top: 8rem;
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+
+    @include media-sm {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-content {
+      padding: 0 2rem;
+
+      .font-italic {
+        letter-spacing: 0.05rem;
+        margin-bottom: 2rem;
+      }
+
+      .skills .list {
+        margin-top: 0.5rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          padding: 0.25rem;
+          display: flex;
+          justify-content: center;
+          background: white;
+          border-radius: 0.25rem; 
+          box-shadow: $light-shadow;
+
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

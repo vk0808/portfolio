@@ -32,7 +32,8 @@
         color: var(--headline);
 
         @include media-sm {
-          font-size: 40px;
+          font-size: 36px;
+          text-align: center;
         }
       }
       
@@ -51,9 +52,6 @@
       .location {
         margin-top: 0;
         margin-bottom: 1rem;
-      }
-      h2 {
-        font-size: 35px;
       }
       h3 {
         font-size: 30px;
@@ -83,10 +81,7 @@
       display: flex;
       justify-content: center;
 
-      .down-arrow {
-        position: absolute;
-        bottom: 0px;
-        
+      .down-arrow {       
         svg {
           width: 30px;
           animation: arrowBlink 2s infinite;

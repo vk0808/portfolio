@@ -1,6 +1,11 @@
 @import './variables';
-@import './theme';
 @import './media';
+@import './theme';
 @import './reset';
 @import './navbar';
 @import './into';
+@import './about';
+
+.app{
+  padding: 0 1rem;
+}
