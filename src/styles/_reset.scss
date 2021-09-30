@@ -1,3 +1,6 @@
+@import './media';
+@import './variables';
+
 // General Settings
 *,
 ::after,
@@ -10,6 +13,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
   background: var(--background);
+  scroll-behavior: smooth;
 }
 ul {
   list-style-type: none;

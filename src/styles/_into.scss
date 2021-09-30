@@ -1,12 +1,15 @@
+@import './media';
+@import './variables';
+
 .intro {
   background-color: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem;
-
-  @include media-lg{
-    height: 80vh;
+  
+  @include media-lg {
+    margin: 3rem 0;
+    min-height: 80vh;
   }
 
   &:hover .last-name {
@@ -83,6 +86,11 @@
     .arrow {
       display: flex;
       justify-content: center;
+      margin-bottom: 2rem;
+
+      @include media-lg {
+        margin-top: 1rem;
+      }
 
       .down-arrow {       
         svg {

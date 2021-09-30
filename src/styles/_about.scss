@@ -1,22 +1,18 @@
+@import './media';
+@import './variables';
+
 .about {
   .content {
-    display: flex;
     gap: 1rem;
-    text-align: center;
-    justify-content: space-around;
-
-    @include media-sm {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @include media-lg{
-      width: 70vw;
-    }
+    
     .font-italic {
       letter-spacing: 0.05rem;
       margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    h2 {
+      text-align: center;
     }
 
     .skills .list {

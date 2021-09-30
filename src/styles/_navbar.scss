@@ -1,3 +1,6 @@
+@import './media';
+@import './variables';
+
 // Navbar
 .navbar {
   position: sticky;
@@ -35,7 +38,7 @@
     transition: $transition;
     cursor: pointer;
 
-    &:hover{
+    &.toggle-active {
       transform: rotate(90deg);
       color: var(--headline) !important;
     }

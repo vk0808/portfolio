@@ -24,7 +24,9 @@ const Navbar = () => {
           <div className="nav-header">
             <h2 className="logo">vinodKumar.</h2>
             <button
-              className="nav-toggle"
+              className={`${
+                showLinks ? "nav-toggle toggle-active" : "nav-toggle"
+              }`}
               onClick={() => setShowLinks(!showLinks)}
             >
               <FaBars />
