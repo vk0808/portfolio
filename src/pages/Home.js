@@ -4,6 +4,7 @@ import Navbar from "../components/Header/Navbar";
 import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
+import Contact from "../components/Contact/Contact";
 import "../styles/main.scss";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Intro />
         <About />
         <Projects />
+        <Contact />
       </div>
     </div>
   );

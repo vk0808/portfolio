@@ -1,0 +1,51 @@
+@import './media';
+@import './variables';
+
+form {
+  @include media-lg {
+    width: 80%;
+  }
+
+  input {
+    height: 30px;
+    width: -webkit-fill-available;
+    
+    &#subject {
+      width: -webkit-fill-available;
+    }
+  }
+  textarea {
+    width: -webkit-fill-available;
+    resize: vertical;
+    padding-top: 0.5rem;
+  }
+  input,
+  textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0.25rem 0.5rem 0.5rem 0;
+    border: 0;
+    border-bottom: 3px solid var(--tertiary);
+    background: transparent;
+    padding-left: 1rem;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  input:focus-visible,
+  textarea:focus-visible {
+    background-color: var(--background);
+    color: var(--headline);
+    outline: none;
+  }
+
+  button {
+    text-transform: capitalize;
+  }
+}
+
+@include media-sm {
+  .contact .container .content{
+    padding: 0 !important;
+    display: block !important;
+    width: 70vw;
+  }
+}
