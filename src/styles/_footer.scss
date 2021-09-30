@@ -1,0 +1,14 @@
+@import './media';
+@import './variables';
+
+.footer {
+  .first-layer, .second-layer{
+    height: 0.75rem;
+  }
+  .first-layer{
+    background: var(--button);
+  }
+  .second-layer{
+    background: var(--tertiary);
+  }
+}

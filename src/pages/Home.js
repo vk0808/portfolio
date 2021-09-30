@@ -5,6 +5,7 @@ import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 import "../styles/main.scss";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }
