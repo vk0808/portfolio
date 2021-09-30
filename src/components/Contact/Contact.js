@@ -1,10 +1,7 @@
 import React from "react";
+const API_KEY = "https://formspree.io/f/" + process.env.REACT_APP_API_KEY;
 
 const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <>
       <section id="contact" className="contact section">
@@ -13,7 +10,7 @@ const ContactForm = () => {
             <h1>About</h1>
           </div>
           <div className="content">
-            <form onSubmit={handleSubmit}>
+            <form action={API_KEY} method="POST" id="email-form">
               <div className="form-group">
                 <input
                   type="text"
@@ -26,8 +23,9 @@ const ContactForm = () => {
               <div className="form-group">
                 <input
                   type="email"
-                  name="email"
+                  name="_replyto"
                   id="email"
+                  pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                   placeholder="Email"
                   required
                 />
@@ -51,7 +49,9 @@ const ContactForm = () => {
                 ></textarea>
               </div>
               <div className="form-group">
-                <button className="submit-btn">send message</button>
+                <button type="submit" value="send" className="submit-btn">
+                  send message
+                </button>
               </div>
             </form>
           </div>
