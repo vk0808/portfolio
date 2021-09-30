@@ -38,14 +38,15 @@ const Projects = () => {
 
   return (
     <section className="projects section" id="projects">
-      <div class="container">
-        <div class="section-title">
+      <div className="container">
+        <div className="section-title">
           <h1>Portfolio</h1>
         </div>
         <div className="content">
           <ul>
             {list.map((item) => (
               <ProjectsList
+                key={item.id}
                 title={item.title}
                 active={selected === item.id}
                 setSelected={setSelected}

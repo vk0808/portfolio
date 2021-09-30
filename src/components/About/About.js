@@ -4,14 +4,14 @@ import { skills } from "./skills";
 const About = () => {
   return (
     <section id="about" className="about section">
-      <div class="container">
-        <div class="section-title">
+      <div className="container">
+        <div className="section-title">
           <h1>About</h1>
         </div>
 
-        <div class="content">
+        <div className="content">
           <div>
-            <p class="font-italic">
+            <p className="font-italic">
               Hey, my name's Vinod Kumar R. I live in Bangalore and I'm a full
               stack web developer, building web applications and sites using
               React and .Net frameworks. My first bit of exposure to web
