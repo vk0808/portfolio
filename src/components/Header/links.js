@@ -2,21 +2,21 @@ export const links = [
   {
     id: 1,
     url: "#",
-    text: "home",
+    text: "home"
   },
   {
     id: 2,
     url: "#about",
-    text: "about",
+    text: "about"
   },
   {
     id: 3,
-    url: "#portfolio",
-    text: "portfolio",
+    url: "#projects",
+    text: "projects"
   },
   {
     id: 4,
     url: "#contact",
-    text: "contact",
+    text: "contact"
   }
 ];

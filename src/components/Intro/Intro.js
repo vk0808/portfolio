@@ -7,7 +7,7 @@ import { ReactComponent as Down } from "./down-arrow.svg";
 const Intro = () => {
   const [colorTheme, setColorTheme] = useState("theme-1");
   return (
-    <div className="intro" id="intro">
+    <section className="intro" id="intro">
       <div className="theme-switcher">
         <Theme colorTheme={colorTheme} setColorTheme={setColorTheme} />
       </div>
@@ -43,12 +43,12 @@ const Intro = () => {
           </a>
         </div>
         <div className="arrow">
-          <a className="down-arrow" href="#portfolio">
+          <a className="down-arrow" href="#projects">
             <Down />
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
