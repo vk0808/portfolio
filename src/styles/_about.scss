@@ -9,6 +9,10 @@
       letter-spacing: 0.05rem;
       margin-bottom: 2rem;
       text-align: center;
+
+      @include media-lg {
+        font-size: 1.25rem;
+      }
     }
     
     h2 {
@@ -25,15 +29,10 @@
 
       li {
         padding: 0.25rem;
-        display: flex;
-        justify-content: center;
-        background: $white;
-        border-radius: 0.25rem; 
-        box-shadow: $light-shadow;
         transition: $transition;
 
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.25);
         }
       }
 

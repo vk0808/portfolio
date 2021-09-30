@@ -16,16 +16,16 @@ const Theme = ({ colorTheme, setColorTheme }) => {
       case "theme-1":
         background = "#fffffe";
         secondary = "#d1d1e9";
-        tertiary = "#ff8906";
+        tertiary = "#4fc4cf";
         headline = "#2b2c34";
         paragraph = "#2b2c34";
-        button = "#6246ea";
+        button = "#994ff3";
         buttonText = "#fffffe";
         break;
       case "theme-2":
         background = "#faeee7";
         secondary = "#ffc6c7";
-        tertiary = "#c3f0ca";
+        tertiary = "#eebbc3";
         headline = "#33272a";
         paragraph = "#594a4e";
         button = "#ff8ba7";

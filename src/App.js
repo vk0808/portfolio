@@ -1,20 +1,21 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 
-import Navbar from "./components/Header/Navbar";
-import Intro from "./components/Intro/Intro";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import Home from "./pages/Home";
+import SingleProject from "./pages/SingleProject";
 import "./styles/main.scss";
 
 export default function App() {
   return (
-    <div>
-      <Navbar />
-      <div className="app">
-        <Intro />
-        <About />
-        <Projects />
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/pledge">
+          <SingleProject />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
