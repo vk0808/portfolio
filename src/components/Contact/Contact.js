@@ -7,7 +7,7 @@ const ContactForm = () => {
       <section id="contact" className="contact section">
         <div className="container">
           <div className="section-title">
-            <h1>About</h1>
+            <h1>Contact</h1>
           </div>
           <div className="content">
             <form action={API_KEY} method="POST" id="email-form">

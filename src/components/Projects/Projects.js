@@ -46,7 +46,7 @@ const Projects = () => {
     <section className="projects section" id="projects">
       <div className="container">
         <div className="section-title">
-          <h1>Portfolio</h1>
+          <h1>Projects</h1>
         </div>
         <div className="content">
           <ul>
