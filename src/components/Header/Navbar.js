@@ -57,12 +57,13 @@ const Navbar = () => {
               {links.map((link) => {
                 const { id, url, text } = link;
                 return (
-                  <li
-                    className="nav-link"
-                    key={id}
-                    scroll={(el) => scrollWithOffset(el)}
-                  >
-                    <NavHashLink smooth activeClassName="active" to={url}>
+                  <li className="nav-link" key={id}>
+                    <NavHashLink
+                      smooth
+                      activeClassName="active"
+                      to={url}
+                      scroll={(el) => scrollWithOffset(el)}
+                    >
                       {text}
                     </NavHashLink>
                   </li>
