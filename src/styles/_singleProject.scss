@@ -7,14 +7,24 @@
   @include media-lg {
     text-align: center;
   }
+  @include media-sm {
+    h1 {
+      font-size: 2rem !important;   
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
   
   .details {
     h2 {
       text-transform: capitalize;
+      margin-bottom: 1rem;
     }
     .technology, .category, .description, .project-links {
       font-size: 1.25rem;
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
       margin-bottom: 1rem;
 
