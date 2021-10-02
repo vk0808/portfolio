@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import ProjectsList from "./ProjectsList";
-import { website, app, game } from "./works";
+import { projectList } from "./works";
 
 const Projects = () => {
+  let website = projectList.filter((project) => project.category === "website");
+  let app = projectList.filter((project) => project.category === "app");
+  let game = projectList.filter((project) => project.category === "game");
+
   const [selected, setSelected] = useState("app");
   const [data, setData] = useState([]);
   const list = [
@@ -66,7 +72,9 @@ const Projects = () => {
               } = project;
               return (
                 <div key={id} className="item">
-                  <img src={image} alt={name} />
+                  <Link to={`/project/${id}`}>
+                    <img src={image} alt={name} />
+                  </Link>
                   {/* <p>{technology}</p>
                 <p>{description}</p>
                 {links.map((link) => {

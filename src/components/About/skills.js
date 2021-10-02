@@ -17,7 +17,7 @@ export const skills = [
   {
     id: 4,
     url: "/assets/img/skills/javascript.png",
-    text: "Javascipt"
+    text: "Javascript"
   },
   {
     id: 5,

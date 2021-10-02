@@ -12,7 +12,7 @@ export default function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/pledge">
+        <Route path="/project/:id">
           <SingleProject />
         </Route>
       </Switch>

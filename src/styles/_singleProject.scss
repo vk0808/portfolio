@@ -1,0 +1,66 @@
+@import './media';
+@import './variables';
+
+.single-project {
+  min-height: 80vh;
+
+  @include media-lg {
+    text-align: center;
+  }
+  
+  .details {
+    h2 {
+      text-transform: capitalize;
+    }
+    .technology, .category, .description, .project-links {
+      font-size: 1.25rem;
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+
+      h3 {
+        min-width: 120px;
+      }
+    }
+    .category p {
+      text-transform: capitalize;
+    }
+    .technology {
+      display: flex;
+      align-items: center;
+
+      .list {
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        li {
+          padding: 0.25rem;
+          transition: $transition;
+
+          &:hover {
+            transform: scale(1.25);
+          }
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+    .project-links ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+
+      li a {
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      .button {
+        padding: 0.25rem auto;
+      }
+    }
+  }
+}
