@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import { NavHashLink } from "react-router-hash-link";
 
 import Theme from "../ThemeSwitcher/Theme";
 import { social } from "./social-links";
-import { ReactComponent as Down } from "./down-arrow.svg";
 
 const Intro = () => {
   const [colorTheme, setColorTheme] = useState("theme-1");
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
     <section className="intro" id="intro">
       <div className="theme-switcher">
@@ -17,13 +24,8 @@ const Intro = () => {
           <h1>
             Vinod <span className="last-name">Kumar R</span>
           </h1>
-          <p className="role">
-            I'm a <span>Full Stack Web </span>
-            Developer
-          </p>
-          <p className="location">
-            from <span>Bangalore</span>
-          </p>
+          <p className="role">Full Stack Developer</p>
+          <p className="location">from Bangalore</p>
           <div className="social-links">
             <ul>
               {social.map((item) => {
@@ -42,10 +44,17 @@ const Intro = () => {
             <button>Download Resume</button>
           </a>
         </div>
-        <div className="arrow">
-          <a className="down-arrow" href="#projects">
-            <Down />
-          </a>
+        <div className="arrow scroll-btn">
+          <NavHashLink
+            smooth
+            activeClassName="active"
+            to="#projects"
+            scroll={(el) => scrollWithOffset(el)}
+          >
+            <span className="mouse">
+              <span></span>
+            </span>
+          </NavHashLink>
         </div>
       </div>
     </section>

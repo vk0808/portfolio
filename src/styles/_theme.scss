@@ -1,6 +1,17 @@
 @import './media';
 @import './variables';
 
+.theme-switcher {
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+  transform: rotateZ(90deg);
+
+  @include media-sm {
+    right: -35px;
+  }
+}
+
 .theme-options{
   max-width: 800px;
   margin: 0 auto;

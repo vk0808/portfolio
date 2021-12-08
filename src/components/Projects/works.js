@@ -3,7 +3,7 @@ export const projectList = [
     id: 1,
     name: "easybank",
     image: "",
-    mockup: "",
+    mockup: "../../assets/img/mockups/easybank.gif",
     category: "website",
     subCategory: "front-end",
     technology: "HTML, CSS, React",

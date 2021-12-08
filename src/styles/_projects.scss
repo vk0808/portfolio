@@ -69,4 +69,8 @@
     background-color: var(--button);
     color: var(--button-text);
   }
+
+  &:not(.active):hover {
+    color: var(--button);
+  }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import { projectList } from "../Projects/works";
 import { skills } from "../About/skills";
 
@@ -29,6 +28,7 @@ const Project = () => {
     );
     return images;
   };
+
   return (
     <section className="single-project section">
       <div className="container">
@@ -36,7 +36,9 @@ const Project = () => {
           <h1>{name}</h1>
         </div>
         <div className="content">
-          <div className="mockup"></div>
+          <div className="mockup">
+            <img src={mockup} alt={`${name}-mockup`} width="100%" />
+          </div>
           <div className="details">
             <h2>Project information</h2>
             <ul>
@@ -68,14 +70,14 @@ const Project = () => {
                     const { id, url, text } = link;
                     return (
                       <li key={id}>
-                        <a
+                        <button
                           className="button"
                           href={url}
                           rel="noreferrer"
                           target="_blank"
                         >
                           {text}
-                        </a>
+                        </button>
                       </li>
                     );
                   })}

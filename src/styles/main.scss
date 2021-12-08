@@ -3,7 +3,7 @@
 @import './theme';
 @import './reset';
 @import './navbar';
-@import './into';
+@import './intro';
 @import './about';
 @import './projects';
 @import './contact';
@@ -36,6 +36,9 @@
     h1 {
       font-size: 2.5rem;
 
+      @include media-sm{
+        font-size: 1.75rem;
+      }
       @include media-lg{
         font-size: 3rem;
       }
@@ -43,6 +46,9 @@
     h2 {
       font-size: 2rem;
 
+      @include media-sm{
+        font-size: 1.5rem;
+      }
       @include media-lg{
         font-size: 2.5rem;
       }

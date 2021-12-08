@@ -53,7 +53,7 @@
   .links-container {
     overflow: hidden;
     transition: $transition;
-    width: 100vw;
+    width: -webkit-fill-available;
     position: absolute;
     z-index: 999;
     text-align: center;
