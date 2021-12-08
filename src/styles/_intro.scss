@@ -5,13 +5,15 @@
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 50px);
   align-items: center;
   margin: auto;
   justify-content: center;
 
-   @include media-sm{
-      min-height: calc(100vh - 50px);
+   @include media-sm {
+      min-height: calc(100vh - 30px);
+      display: grid;
+      place-content: center;
     }
   
   .left {
