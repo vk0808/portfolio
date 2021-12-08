@@ -35,6 +35,7 @@ form {
     background-color: var(--background);
     color: var(--headline);
     outline: none;
+    border-bottom: 3px solid var(--button);
   }
 
   button {
