@@ -62,43 +62,12 @@ const Projects = () => {
           </ul>
           <div className="list">
             {data.map((project) => {
-              const {
-                id,
-                name,
-                image,
-                technology,
-                description,
-                links
-              } = project;
+              const { id, name, image } = project;
               return (
                 <div key={id} className="item">
                   <Link to={`/project/${id}`}>
                     <img src={image} alt={name} />
                   </Link>
-                  {/* <p>{technology}</p>
-                <p>{description}</p>
-                {links.map((link) => {
-                  const { demo, github, codeSandbox } = link;
-                  return (
-                    <ul>
-                      <li>
-                        <a href={demo} target="_blank">
-                          Demo
-                        </a>
-                      </li>
-                      <li>
-                        <a href={github} target="_blank">
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a href={codeSandbox} target="_blank">
-                          CodeSandbox
-                        </a>
-                      </li>
-                    </ul>
-                  );
-                })} */}
                 </div>
               );
             })}

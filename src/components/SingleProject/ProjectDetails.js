@@ -70,14 +70,14 @@ const Project = () => {
                     const { id, url, text } = link;
                     return (
                       <li key={id}>
-                        <button
+                        <a
                           className="button"
                           href={url}
                           rel="noreferrer"
                           target="_blank"
                         >
                           {text}
-                        </button>
+                        </a>
                       </li>
                     );
                   })}

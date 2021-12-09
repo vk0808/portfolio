@@ -1,12 +1,40 @@
 export const projectList = [
   {
+    id: 8,
+    name: "bookstore",
+    image: "assets/img/portfolio/bookstore.png",
+    mockup: "",
+    category: "website",
+    subCategory: "full stack",
+    technology: "Angular, Typescript, HTML, SASS",
+    links: [
+      {
+        id: 1,
+        text: "demo",
+        url: "https://bookstore-app.web.app/"
+      }
+      // {
+      //   id: 2,
+      //   text: "github",
+      //   url: "https://github.com/vk0808"
+      // }
+      // {
+      //   id: 3,
+      //   text: "codeSandbox",
+      //   url: ""
+      // }
+    ],
+    description:
+      "Bookstore is an e-commerce platform where the customer can purchase books online. Through a web browser the customers can search for a book by its title or author, later can add to the shopping cart and finally purchase the books."
+  },
+  {
     id: 1,
     name: "easybank",
-    image: "",
+    image: "assets/img/portfolio/easybank.png",
     mockup: "../../assets/img/mockups/easybank.gif",
     category: "website",
     subCategory: "front-end",
-    technology: "HTML, CSS, React",
+    technology: "React, Javascript, HTML, CSS",
     links: [
       {
         id: 1,
@@ -24,7 +52,8 @@ export const projectList = [
       //   url: ""
       // }
     ],
-    description: "Easybank is a next-generation digital banking."
+    description:
+      "Easybank is a corporate website, that presents information on the company, it's services and benefits. It also presents business opportunities, contact details and career opportunities within the company."
   },
   {
     id: 2,
@@ -54,41 +83,41 @@ export const projectList = [
     description:
       "A simple restaurant website that showcases the restaurant's best culinary creations, culinary specialists, and promotions. It includes features such as signup/login and reservation. It has about page with restaurant information from chef to address with map directions, and a feedback form. It also encloses a menu, which provides a list of various food that the restaurant serves, along with description and price."
   },
-  {
-    id: 3,
-    name: "bookCritics",
-    image: "assets/img/portfolio/bookcritics.png",
-    mockup: "",
-    category: "website",
-    subCategory: "front-end",
-    technology: "HTML, CSS, JavaScript",
-    links: [
-      {
-        id: 1,
-        text: "demo",
-        url: "https://vk0808.github.io/bookCritics/docs/home.html"
-      },
-      {
-        id: 2,
-        text: "github",
-        url: "https://github.com/vk0808"
-      }
-      // {
-      //   id: 3,
-      //   text: "codeSandbox",
-      //   url: ""
-      // }
-    ],
-    description:
-      "bookCritics is a replica of a book review website that offers every piece of information related to books such as publication, author, ISBN, ratings, and reviews. It contains a responsive subscription form. It includes a blog page to post articles and an about page with information on team members and contact."
-  },
+  // {
+  //   id: 3,
+  //   name: "bookCritics",
+  //   image: "assets/img/portfolio/bookcritics.png",
+  //   mockup: "",
+  //   category: "website",
+  //   subCategory: "front-end",
+  //   technology: "HTML, CSS, JavaScript",
+  //   links: [
+  //     {
+  //       id: 1,
+  //       text: "demo",
+  //       url: "https://vk0808.github.io/bookCritics/docs/home.html"
+  //     },
+  //     {
+  //       id: 2,
+  //       text: "github",
+  //       url: "https://github.com/vk0808"
+  //     }
+  //     // {
+  //     //   id: 3,
+  //     //   text: "codeSandbox",
+  //     //   url: ""
+  //     // }
+  //   ],
+  //   description:
+  //     "bookCritics is a replica of a book review website that offers every piece of information related to books such as publication, author, ISBN, ratings, and reviews. It contains a responsive subscription form. It includes a blog page to post articles and an about page with information on team members and contact."
+  // },
   {
     id: 4,
     name: "Birthday Reminder",
     image: "assets/img/portfolio/birthday.png",
     mockup: "",
     category: "app",
-    technology: "HTML, CSS, React",
+    technology: "React, Javascript, HTML, CSS",
     links: [
       {
         id: 1,
@@ -115,7 +144,7 @@ export const projectList = [
     image: "assets/img/portfolio/todo.png",
     mockup: "",
     category: "app",
-    technology: "HTML, CSS, React",
+    technology: "React, Javascript, HTML, CSS",
     links: [
       {
         id: 1,
@@ -142,7 +171,7 @@ export const projectList = [
     image: "assets/img/portfolio/meme.png",
     mockup: "",
     category: "app",
-    technology: "React, HTML, CSS",
+    technology: "React, Javascript, HTML, CSS",
     links: [
       {
         id: 1,
@@ -166,7 +195,7 @@ export const projectList = [
   {
     id: 7,
     name: "tetris",
-    image: "",
+    image: "assets/img/portfolio/game-tetris.png",
     mockup: "",
     category: "game",
     technology: "HTML, SASS, Javascript",
@@ -187,6 +216,7 @@ export const projectList = [
       //   url: ""
       // }
     ],
-    description: "A simple Tetris game build using vanilla JavaScprit."
+    description:
+      "Tetris is a simple puzzle game build using vanilla JavaScprit."
   }
 ];

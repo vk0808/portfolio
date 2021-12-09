@@ -5,16 +5,15 @@
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 100px);
   align-items: center;
   margin: auto;
   justify-content: center;
+  margin-top: -1rem;
 
-   @include media-sm {
-      min-height: calc(100vh - 30px);
-      display: grid;
-      place-content: center;
-    }
+  @include media-sm {
+    min-height: calc(100vh - 50px);
+  }
   
   .left {
     .wrapper {
@@ -98,7 +97,6 @@
 
       @include media-lg {
         margin-top: 1rem;
-        zoom: 0.85;
       }      
     }
   }

@@ -24,12 +24,17 @@
     .technology, .category, .description, .project-links {
       font-size: 1.25rem;
       display: flex;
-      flex-wrap: wrap;
       gap: 2rem;
       margin-bottom: 1rem;
+      text-align: left;
+
+      @include media-sm {        
+        flex-wrap: wrap;
+      }
 
       h3 {
         min-width: 120px;
+        text-align: left;
       }
     }
     .category p {
@@ -62,7 +67,7 @@
       flex-wrap: wrap;
       gap: 1.25rem;
 
-      li button {
+      li .button {
         text-transform: capitalize;
         font-size: 1rem;
         padding: 0.5rem 1rem;

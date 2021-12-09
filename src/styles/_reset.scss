@@ -52,12 +52,11 @@ button, .button {
   border: 2px solid var(--button);
   transition: $transition;
 }
-button:hover, .button {
+button:hover, .button:hover {
   background: var(--button);
   color: var(--button-text);
   cursor: pointer;
 }
-
 @include media-sm {
   h1 {
     font-size: 1.75rem;

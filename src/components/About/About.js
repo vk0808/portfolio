@@ -12,14 +12,13 @@ const About = () => {
         <div className="content">
           <div>
             <p className="font-italic">
-              Hey, my name's Vinod Kumar R. I live in Bangalore and I'm a full
-              stack web developer, building web applications and sites using
-              React and .Net frameworks. My first bit of exposure to web
-              development was in summer holidays after high school when I had
-              joined a Computer Diplomma Course, I learned basics of HTML. I
-              like to think that I've learned a lot since then!. Check out some
-              of my work and feel free to shoot me an email if you'd like to
-              work together.
+              My name's Vinod Kumar R. I live in Bangalore. I'm a Full Stack
+              Developer, building web applications and sites using Angular/React
+              and .NET frameworks. My first bit of exposure to web development
+              was in high school summer holidays, where I had learned basics of
+              HTML. I like to think that I've learned a lot since then!. Check
+              out some of my work and feel free to shoot me an email if you'd
+              like to work together.
             </p>
           </div>
           <div>
